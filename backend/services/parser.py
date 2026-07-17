@@ -1,8 +1,4 @@
 def process_document(filename: str, content: bytes) -> dict:
-    """
-    Stub for document processing.
-    In later phases, this will use PyMuPDF, tesseract, etc. based on file extension.
-    """
     ext = filename.split(".")[-1].lower() if "." in filename else ""
     text = ""
     
