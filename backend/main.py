@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import upload, query
+from routers import upload, query, agents
 
 app = FastAPI(
     title="AI Due Diligence Platform",
@@ -18,6 +18,7 @@ app.add_middleware(
 
 app.include_router(upload.router, prefix="/api/v1")
 app.include_router(query.router, prefix="/api/v1")
+app.include_router(agents.router, prefix="/api/v1")
 
 @app.get("/health")
 def health_check():
