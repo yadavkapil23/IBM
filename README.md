@@ -16,7 +16,7 @@ An intelligent, AI-powered system designed to automate the manual due diligence 
 - **Backend**: Python + FastAPI (for high-performance, asynchronous endpoints).
 - **Vector Database**: ChromaDB (local persistence).
 - **Embeddings**: HuggingFace (`all-MiniLM-L6-v2`) via `sentence-transformers`.
-- **LLM Integration**: LangChain (orchestration) + Hugging Face Inference API.
+- **LLM Integration**: LangChain (orchestration) + NVIDIA AI Endpoints (Llama 3/Mistral).
 
 ## ⚙️ Prerequisites
 
@@ -73,8 +73,8 @@ npm run dev
 - [x] **Phase 1**: Document Ingestion (FastAPI Upload endpoints)
 - [x] **Phase 2**: Document Processing (Parsing architecture)
 - [x] **Phase 3**: RAG Pipeline (ChromaDB + LangChain embeddings)
-- [ ] **Phase 4**: Specialized AI Agents (Financial, Legal, Compliance)
-- [ ] **Phase 5**: Cross-Document Analysis
+- [x] **Phase 4**: Specialized AI Agents (Financial, Legal, Compliance)
+- [x] **Phase 5**: Cross-Document Analysis
 - [ ] **Phase 6**: Risk Scoring Engine
 - [ ] **Phase 7**: Executive Report Generation
 - [ ] **Phase 8**: Dashboard UI Construction
