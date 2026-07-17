@@ -75,7 +75,7 @@ npm run dev
 - [x] **Phase 3**: RAG Pipeline (ChromaDB + LangChain embeddings)
 - [x] **Phase 4**: Specialized AI Agents (Financial, Legal, Compliance)
 - [x] **Phase 5**: Cross-Document Analysis
-- [ ] **Phase 6**: Risk Scoring Engine
-- [ ] **Phase 7**: Executive Report Generation
+- [x] **Phase 6**: Risk Scoring Engine
+- [x] **Phase 7**: Executive Report Generation
 - [ ] **Phase 8**: Dashboard UI Construction
 - [ ] **Phase 9**: Deployment (Docker, AWS/Azure, PostgreSQL)
