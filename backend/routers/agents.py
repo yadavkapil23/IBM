@@ -8,7 +8,7 @@ router = APIRouter(
 )
 
 class AgentQueryRequest(BaseModel):
-    agent_type: str # financial, legal, compliance, cross_analysis
+    agent_type: str # financial, legal, compliance, cross_analysis, risk_scoring
     question: str
 
 @router.post("/analyze")
@@ -20,3 +20,13 @@ async def analyze_documents(req: AgentQueryRequest):
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@router.post("/report")
+async def generate_report():
+    try:
+        from services.agents import generate_executive_report
+        result = generate_executive_report()
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
