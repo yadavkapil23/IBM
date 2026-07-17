@@ -8,8 +8,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def get_llm():
-    # Use meta/llama3-70b-instruct available via NVIDIA API
-    return ChatNVIDIA(model="meta/llama3-70b-instruct")
+    # Use Nemotron Mini available via NVIDIA API or configurable via .env
+    model_name = os.getenv("NVIDIA_MODEL_NAME", "nvidia/nemotron-mini-4b-instruct")
+    base_url = os.getenv("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1")
+    return ChatNVIDIA(model=model_name, base_url=base_url)
 
 PROMPTS = {
     "financial": """You are an expert Financial Due Diligence Agent. Your role is to analyze financial documents and extract key financial risks, revenue numbers, and inconsistencies.
