@@ -69,13 +69,3 @@ npm run dev
 ```
 
 ## 🗺️ Roadmap
-
-- [x] **Phase 1**: Document Ingestion (FastAPI Upload endpoints)
-- [x] **Phase 2**: Document Processing (Parsing architecture)
-- [x] **Phase 3**: RAG Pipeline (ChromaDB + LangChain embeddings)
-- [x] **Phase 4**: Specialized AI Agents (Financial, Legal, Compliance)
-- [x] **Phase 5**: Cross-Document Analysis
-- [x] **Phase 6**: Risk Scoring Engine
-- [x] **Phase 7**: Executive Report Generation
-- [x] **Phase 8**: Dashboard UI Construction
-- [ ] **Phase 9**: Deployment (Docker, AWS/Azure, PostgreSQL)
